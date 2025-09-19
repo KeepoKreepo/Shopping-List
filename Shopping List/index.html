@@ -1,0 +1,94 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Shopping List</title>
+    <link href="images/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/JavaScript" src="js/myScript.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="title">
+            <h1>Shopping List</h1>
+        </div>
+        <div id="head">
+            <div class="w3-col" style="width: 33%;">
+                <h3>Item</h3>
+            </div>
+            <div class="w3-col" style="width: 33%;">
+                <h3>Cost</h3>
+            </div>
+            <div class="w3-col" style="width: 33%;">
+                <h3>Amount</h3>
+            </div>
+        </div>
+        <div id="scroll">
+            <div id="item" class="w3-col" style="width: 33%;">
+                <p id="nameList"></p>
+            </div>
+            <div id="cost" class="w3-col" style="width: 33%;">
+                <p id="costList"></p>
+            </div>
+            <div id="amount" class="w3-col" style="width: 33%;">
+                <p id="amountList"></p>
+            </div>
+        </div>
+        <div id="inputs">
+            <table class="w3-table" style="height: 100%;">
+                <tr>
+                    <td>
+                        <label for="nameInput">Item Name:</label>
+                        <input type="text" id="nameInput" class="w3-input w3-light-grey" style="height: 70px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="costInput">Cost of Item:</label>
+                        <input type="text" id="costInput" class="w3-input w3-border w3-light-grey"
+                            style="height: 70px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="amountInput">Amount of Items:</label>
+                        <input type="text" id="amountInput" class="w3-input w3-border w3-light-grey"
+                            style="height: 70px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="removeInput">Remove an Item By Name:</label>
+                        <input type="text" id="removeInput" class="w3-input w3-border w3-light-grey"
+                            style="height: 70px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" id="addItem" class="w3-button w3-border w3-light-grey"
+                            style="height: 100px; width: 200px;">Add Item</button>
+                        <button type="button" id="removeBu" class="w3-button w3-border w3-light-grey"
+                            style="height: 100px; width: 200px;">Remove</button>
+                        <button type="button" id="sortList" class="w3-button w3-border w3-light-grey"
+                            style="height: 100px; width: 200px;">Sort List</button>
+                        <select name="sort" id="sort" class="w3-button w3-light-grey"
+                            style="height: 100px; width: 200px;">
+                            <option value="" id="nAsc">Name Ascending</option>
+                            <option value="" id="nDsc">Name Descending</option>
+                            <option value="" id="cAsc">Cost Ascending</option>
+                            <option value="" id="cDsc">Cost Descending</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="total">
+            <h2 id="totalP"></h2>
+        </div>
+    </div>
+</body>
+
+</html>
